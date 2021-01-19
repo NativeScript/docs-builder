@@ -8,9 +8,7 @@ echo "Building NativeScript docs"
 echo "Cleaning..."
 rm -rf ns-docs $DIST_DIR
 
-function clone() {
-
-
+function clone {
   # Checkout specific branch if specified
   if [ -z "$2" ]; then
     git clone --depth 1 "https://github.com/NativeScript/$1.git"
