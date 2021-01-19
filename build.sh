@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 DIST_DIR=$(pwd)/dist
 
