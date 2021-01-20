@@ -14,7 +14,7 @@ clone() {
   if [ -z "$2" ]; then
     git clone --depth 1 "https://github.com/NativeScript/$1.git"
   else
-    echo "Cloning branch $2..."
+    echo "Cloning $1 on branch $2..."
     git clone --single-branch --branch $2 "https://github.com/NativeScript/$1.git"
   fi
 }
@@ -34,7 +34,7 @@ mkdir v6; cd v6
 
 clone "docs" "v6.x"
 clone "nativescript-angular"
-clone "NativeScript" "tns-core-modules"
+clone "NativeScript" "ci/v6-tests"#"tns-core-modules"
 clone "nativescript-sdk-examples-js"
 clone "nativescript-sdk-examples-ng"
 clone "nativescript-cli"
