@@ -28,3 +28,19 @@ jobs:
         with:
           name: docs-v7
           path: dist/v7/site
+          
+      - name: Publish v6
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=dist/v6/site
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_v6 }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          
+#       - name: Publish v7
+#         uses: netlify/actions/cli@master
+#         with:
+#           args: deploy --dir=dist/v7/site
+#         env:
+#           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_v7 }}
+#           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
