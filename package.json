@@ -1,0 +1,15 @@
+{
+  "name": "nativescript-docs-builder",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "gulp": "^4.0.2",
+    "gulp-typedoc": "^2.2.9",
+    "typedoc": "^0.20.16",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "markdown-snippet-injector": "^0.2.4"
+  }
+}
