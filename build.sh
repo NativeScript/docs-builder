@@ -1,7 +1,8 @@
 #!/bin/bash
 
-BUILD_DIR=$(pwd)/ns-docs
-DIST_DIR=$(pwd)/dist
+ROOT_DIR=$(pwd)
+BUILD_DIR=$ROOT_DIR/ns-docs
+DIST_DIR=$ROOT_DIR/dist
 
 echo "Building NativeScript docs"
 
@@ -34,7 +35,7 @@ mkdir v6; cd v6
 
 clone "docs" "v6.x"
 clone "nativescript-angular"
-clone "NativeScript" "ci/v6-tests"
+clone "NativeScript" "ci/fix-npm_install-v6"
 clone "nativescript-sdk-examples-js"
 clone "nativescript-sdk-examples-ng"
 clone "nativescript-cli"
@@ -52,6 +53,7 @@ mkdir $DIST_DIR/v6
 cp -r ./docs/build/bin/site $DIST_DIR/v6
 cp ./docs/build/bin/site/start/landing.html $DIST_DIR/v6/site/index.html
 cp ./docs/version.json $DIST_DIR/v6/site
+cp $ROOT_DIR/_redirects $DIST_DIR/v6/site
 # END V6 ##########################
 
 
@@ -62,7 +64,7 @@ mkdir v7; cd v7
 
 clone "docs"
 clone "nativescript-angular"
-clone "NativeScript" "feat/ns7-docs" # todo: remove branch when merged
+clone "NativeScript" "feat/ns7-docs"
 clone "nativescript-sdk-examples-js"
 clone "nativescript-sdk-examples-ng"
 clone "nativescript-cli"
@@ -80,6 +82,7 @@ mkdir $DIST_DIR/v7
 cp -r ./docs/build/bin/site $DIST_DIR/v7
 cp ./docs/build/bin/site/start/landing.html $DIST_DIR/v7/site/index.html
 cp ./docs/version.json $DIST_DIR/v7/site
+cp $ROOT_DIR/_redirects $DIST_DIR/v7/site
 # END V7 ##########################
 
 echo "Build complete."

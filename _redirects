@@ -1,0 +1,27 @@
+# redirect sidekick pages
+/sidekick/*                    /
+
+/vuejs/ns-ui-api-reference/*      /ns-ui-api-reference/:splat    301
+/angular/ns-ui-api-reference/*    /ns-ui-api-reference/:splat    301
+
+/vuejs/api-reference/*            /api-reference/:splat          301
+/angular/api-reference/*          /api-reference/:splat          301
+
+# redirects for otherwise 404 pages
+/hardware/camera                  https://github.com/NativeScript/nativescript-camera/blob/master/README.md
+/hardware/location                https://github.com/NativeScript/nativescript-geolocation/blob/master/README.md
+/5-4/hardware/location            https://github.com/NativeScript/nativescript-geolocation/blob/master/README.md
+/angular/tutorial/ng-chapter-0    https://play.nativescript.org/?template=play-ng&tutorial=getting-started-ng
+/tutorial/chapter-0               https://play.nativescript.org/?template=play-js&tutorial=getting-started
+
+/plugins/plugins                              /core-concepts/plugins                               301
+/ns-framework-modules/formatted-string        /angular/ui/ng-components/formatted-string           301
+/cookbook/ui/animation                        /ui/animation                                        301
+/ns-framework-modules/*                       /ui/components/:splat                                301
+/ui/ns-ui-widgets/*                           /ui/components/:splat                                301
+/cookbook/ui/layouts/*                        /ui/layouts/layout-containers                        301
+/cookbook/ui/*                                /ui/ns-ui-widgets/:splat                             301
+/cookbook/data/*                              /ns-framework-modules/:splat                         301
+/cookbook/*                                   /ns-framework-modules/:splat                         301
+
+
