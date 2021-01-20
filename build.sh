@@ -35,7 +35,7 @@ mkdir v6; cd v6
 
 clone "docs" "v6.x"
 clone "nativescript-angular"
-clone "NativeScript" "ci/fix-npm_install-v6"
+clone "NativeScript" "tns-core-modules"
 clone "nativescript-sdk-examples-js" "v6.x"
 clone "nativescript-sdk-examples-ng" "v6.x"
 clone "nativescript-cli"
