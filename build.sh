@@ -53,7 +53,7 @@ mkdir $DIST_DIR/v6
 cp -r ./docs/build/bin/site $DIST_DIR/v6
 cp ./docs/build/bin/site/start/landing.html $DIST_DIR/v6/site/index.html
 cp ./docs/version.json $DIST_DIR/v6/site
-cp $ROOT_DIR/_redirects $DIST_DIR/v6/site
+cp $ROOT_DIR/_redirects_v6 $DIST_DIR/v6/site/_redirects
 # END V6 ##########################
 
 
@@ -82,7 +82,7 @@ mkdir $DIST_DIR/v7
 cp -r ./docs/build/bin/site $DIST_DIR/v7
 cp ./docs/build/bin/site/start/landing.html $DIST_DIR/v7/site/index.html
 cp ./docs/version.json $DIST_DIR/v7/site
-cp $ROOT_DIR/_redirects $DIST_DIR/v7/site
+cp $ROOT_DIR/_redirects_v7 $DIST_DIR/v7/site/_redirects
 # END V7 ##########################
 
 echo "Build complete."
