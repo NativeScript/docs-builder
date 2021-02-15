@@ -62,7 +62,7 @@ echo "Building v7.x docs"
 cd $BUILD_DIR
 mkdir v7; cd v7
 
-clone "docs" "feature/updated-docs"
+clone "docs"
 clone "nativescript-angular"
 clone "NativeScript" "feat/ns7-docs"
 clone "nativescript-sdk-examples-js"
